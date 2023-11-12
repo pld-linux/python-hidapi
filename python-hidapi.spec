@@ -2,12 +2,12 @@
 # Conditional build:
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-hidapi.spec)
 
 Summary:	Cython interface to HIDAPI library
 Summary(pl.UTF-8):	Cythonowy interfejs do biblioteki HIDAPI
 Name:		python-hidapi
-# 0.9.0.post3 requires hidapi > 0.9.0
+# keep 0.9.0.post2 here for python2 support
 Version:	0.9.0.post2
 Release:	6
 License:	GPL v3 or BSD or HIDAPI
